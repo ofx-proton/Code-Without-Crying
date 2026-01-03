@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Without Crying</title>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css_src/index.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="brand">Code Without Crying</a>
+
+            <!-- Burger -->
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Lessons</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">How It Works</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Help</a></li>
+                </ul>
+            </div>
+
+            <!-- Overlay -->
+            <span class="overlay"></span>
+
+            <!-- CTA -->
+            <button type="button" class="menu-block">
+                <a href="html_src/Table_Of_Contents.html" class="btn btn-neutral">Start Learning</a>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <section class="section banner-section">
+            <div class="container banner-column">
+
+                <!-- Image -->
+                <img src="img_src/hero.jpeg" class="banner-image" width="480" height="360" alt="Learning illustration"
+                    fetchpriority="high" />
+
+                <!-- Content -->
+                <div class="banner-inner">
+                    <h1 class="title-large">
+                        Learn Code.<br>
+                        One Small Thing at a Time.
+                    </h1>
+
+                    <p class="text-base font-normal">
+                        Code Without Crying explains programming like a human would.
+                        Short lessons. One tiny idea.
+                        Read it in five minutes, learn one thing, move on.
+                    </p>
+
+                    <button type="button" class="menu-block btn btn-neutral"
+                        onclick="window.location.href='html_src/Table_Of_Contents.html'">
+                        Start Learning
+                    </button>
+
+                </div>
+
+                <!-- Social -->
+                <div class="banner-link">
+                    <a href="https://github.com/ofx-proton/Code-Without-Crying.git" title="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="#" title="Mail"><i class="bx bxl-gmail"></i></a>
+                    <a href="#" title="Community"><i class="bx bx-chat"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="script_src/index.js"></script>
+</body>
+
+</html>
