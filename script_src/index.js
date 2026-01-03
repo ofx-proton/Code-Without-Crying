@@ -47,3 +47,12 @@ window.addEventListener("resize", () => {
       }
    }
 });
+const menuLinks = document.querySelectorAll(".menu-link");
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navbarMenu.classList.remove("is-active");
+    burgerMenu.classList.remove("is-active");
+    bgOverlay.classList.remove("is-active");
+  });
+});
