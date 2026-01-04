@@ -260,7 +260,6 @@ picture {
   text-transform: uppercase;
   color: var(--color-gray-100);
 }
-
 .menu {
   position: fixed;
   top: -100%;

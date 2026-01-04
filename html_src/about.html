@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,38 +10,39 @@
 </head>
 
 <body>
-
-  <header class="header on-scroll">
+  <!-- Header -->
+  <header class="header" id="header">
     <nav class="navbar container">
-      <a href="../index.html" class="brand">Code Without Crying</a>
-    </nav>
-  </header>
+      <a href="../index.html" class="brand"><svg width="64" height="32" viewBox="0 0 64 32"
+          xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="24" font-family="monospace" font-size="24" font-weight="700" fill="currentColor">
+            !&lt;
+          </text>
+        </svg>
+      </a>
 
-  <main class="main">
-    <section class="section">
-      <div class="container center">
-
-        <h1 class="title-large">About</h1>
-
-        <div class="about-content" style="margin-top: 3rem;">
-          <p class="text-base">
-            Code Without Crying exists because most tutorials are written
-            as if confusion is a personal weakness.
-          </p>
-
-          <p class="text-base">
-            This project is built for people who want to learn slowly,
-            clearly, and without pressure.
-          </p>
-
-          <p class="text-base">
-            You don’t need motivation. You need explanations that make sense.
-          </p>
-        </div>
-
+      <!-- Burger -->
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </div>
-    </section>
-  </main>
+      <!-- Menu -->
+      <div class="menu" id="menu">
+        <ul class="menu-inner">
+          <li class="menu-item"><a href="../index.html" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="../html_src/lessons.html" class="menu-link">Lessons</a></li>
+          <li class="menu-item">
+            <a href="../html_src/how_it_works.html" class="menu-link">How It Works</a>
+          </li>
+          <li class="menu-item">
+            <a href="../html_src/about.html" class="menu-link">About</a>
+          </li>
 
+        </ul>
+      </div>
+
+      <script src="../script_src/index.js"></script>
 </body>
+
 </html>

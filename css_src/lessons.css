@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+:root {
+  --color-gray-100: hsl(220, 12%, 98%);
+  --color-gray-200: hsl(220, 12%, 90%);
+  --color-gray-300: hsl(220, 12%, 85%);
+  --color-gray-400: hsl(220, 12%, 65%);
+  --color-gray-500: hsl(220, 12%, 45%);
+  --color-dark-100: hsl(240, 10%, 15%);
+  --color-dark-200: hsl(240, 10%, 12%);
+  --color-dark-300: hsl(240, 10%, 9%);
+  --color-dark-400: hsl(240, 10%, 6%);
+  --color-dark-500: hsl(240, 10%, 3%);
+  --color-blue-300: hsl(217, 80%, 55%);
+  --shadow-medium: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+                   rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+
+.section {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+/* ========================= */
+/* CARDS                     */
+/* ========================= */
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+.card {
+  font-family: "Heebo", sans-serif;
+  --bg-filter-opacity: 0.5;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, var(--bg-filter-opacity)),
+      rgba(0, 0, 0, var(--bg-filter-opacity))
+    ),
+    var(--bg-img);
+
+  height: 15em;
+  width: 13.2em;
+  font-size: 1.5em;
+  color: var(--color-gray-100);
+  border-radius: 1em;
+  padding: 1em;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.00);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  --bg-filter-opacity: 0.65;
+}
+
+/* Typography */
+.card h1 {
+  margin: 0;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+.card p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75em;
+  margin-top: 0.5em;
+  line-height: 1.6;
+}
+
+/* Tags */
+.card .tags {
+  display: flex;
+  gap: 0.5em;
+}
+
+.card .tag {
+  font-size: 0.7em;
+  padding: 0.15em 0.5em;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 0.3rem;
+}
+
+/* Date */
+.card .date {
+  position: absolute;
+  top: 0.75em;
+  right: 0.75em;
+  font-size: 0.7em;
+  opacity: 0.75;
+}
+
+/* Number */
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+/* ========================= */
+/* RESPONSIVE                */
+/* ========================= */
+
+@media (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid-space .num {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    max-width: calc(100vw - 3rem);
+  }
+}

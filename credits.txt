@@ -1,3 +1,6 @@
+### Credits
 Responsive Hero Section with Navigation Menu
 Created by Syahrizaldev — https://codepen.io/syahrizaldev/pen/QWmdGwe
 Licensed under CodePen’s default public availability. :contentReference[oaicite:1]{index=1}
+- Card design inspiration from Booligoosh  
+  https://codepen.io/Booligoosh/pen/mKPpQp
