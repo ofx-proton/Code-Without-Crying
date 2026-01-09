@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Beginner Syntax</title>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css_src/index.css" />
+
+    <!-- Lesson CSS -->
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="../index.html" class="brand">
+                <svg width="64" height="32" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="24" font-family="monospace" font-size="24" font-weight="700" fill="currentColor">
+                        !< </text>
+                </svg>
+            </a>
+
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="../index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="../html_src/lessons.html" class="menu-link">Lessons</a></li>
+                    <li class="menu-item"><a href="../html_src/how_it_works.html" class="menu-link">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="overlay"></span>
+
+            <button type="button" class="menu-block">
+                <a href="../html_src/lessons.html" class="btn btn-neutral">All Lessons</a>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <section class="section" style="padding-block: 5rem 0;">
+            <div class="container">
+                <nav class="lesson-breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <a href="../html_src/lessons.html" class="breadcrumb-link">Lessons</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">HTML Intro</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Lesson -->
+        <section class="section" style="padding-block: 2rem;">
+            <div class="container lesson-header-wrapper">
+
+                <h1 class="title-large">HTML Introduction (a.k.a. Talking Nicely to Browsers)</h1>
+
+                <p class="lesson-description text-medium font-normal">
+                    HTML is not hacking.
+                    It’s not magic.
+                    It’s telling a browser what things are and hoping it listens.
+                    Sometimes it does.
+                    Sometimes it panics quietly.
+                </p>
+
+                <div class="lesson-meta">
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-time-five'></i>
+                        <span>~7 min (emotional damage included)</span>
+                    </span>
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-layer'></i>
+                        <span>Beginner</span>
+                    </span>
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-purchase-tag'></i>
+                        <span>HTML</span>
+                    </span>
+                </div>
+
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 1</span>
+                        <h2 class="lesson-part-title title-small">
+                            HTML Tags: Tiny Brackets, Big Attitude
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+
+                        <p class="text-base font-normal">
+                            HTML stands for <strong>HyperText Markup Language</strong>.
+                            Which sounds intense.
+                            It isn’t.
+                            It just labels content so browsers don’t guess.
+                        </p>
+
+                        <!-- Info -->
+                        <div class="lesson-box lesson-box-info">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-info-circle'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">HTML Tag Lore</h3>
+                                <p>
+                                    Tags look like <code>&lt;p&gt;</code> and usually need a
+                                    <code>&lt;/p&gt;</code>.
+                                    Forget the closing tag and the browser will improvise.
+                                    Poorly.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Code -->
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;This is HTML. I am learning.&lt;/p&gt;</code></pre>
+                        </div>
+
+                        <!-- VS CODE TRICK -->
+                        <div class="lesson-box lesson-box-info">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-bulb'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">VS Code Cheat Code</h3>
+                                <p>
+                                    Create a file called <code>index.html</code>.
+                                    Type <strong>!</strong> and press <strong>Enter</strong>.
+                                    VS Code does the work because it respects your time.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">Type This</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>!</code></pre>
+                        </div>
+                      <div class="lesson-media">
+    <img src="../img_src/!.png" alt="Description of image" class="lesson-media-img" />
+    <p class="lesson-media-caption text-small">
+        Emmet aka VScode Cheat.
+    </p>
+</div>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">Instant Result</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+
+                        <div class="lesson-box lesson-box-warning">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-error-circle'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">Skill Issue Alert</h3>
+                                <p>
+                                    If nothing happens, Emmet is disabled.
+                                    VS Code woke up and chose “not today”.
+                                    Check your settings and try again.
+                                    <br><br>
+                                    Also, do NOT just stare at the screen expecting magic.
+                                    This is not telepathy.
+                                    You must press <strong>Enter</strong>.
+                                    Not space.
+                                    Not click.
+                                    Not vibes.
+                                    <br><br>
+                                    When the suggestion popup appears (like in the image),
+                                    press <strong>Enter</strong>.
+                                    That’s it.
+                                    If you press space, congratulations —
+                                    you just told VS Code you enjoy suffering.
+                                </p>
+                            </div>
+                            
+
+                        </div>
+                        <div class="lesson-summary">
+                            <h2 class="lesson-summary-title title-medium">What You Learned (Whether You Liked It or Not)
+                            </h2>
+                            <div class="lesson-summary-content">
+                                <ul class="lesson-summary-list">
+                                    <li>
+                                        HTML is not programming magic — it’s just labeling content so browsers stop
+                                        guessing and embarrassing themselves.
+                                    </li>
+                                    <li>
+                                        HTML works using <strong>tags</strong> like <code>&lt;h1&gt;</code> and
+                                        <code>&lt;p&gt;</code>, and yes, closing them actually matters.
+                                    </li>
+                                    <li>
+                                        The basic HTML structure (<code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+                                        <code>&lt;body&gt;</code>) is non-negotiable, even if you feel rebellious.
+                                    </li>
+                                    <li>
+                                        VS Code has cheat codes (Emmet). Typing <strong>!</strong> +
+                                        <strong>Enter</strong> is not cheating — it’s called being efficient and
+                                        mentally stable.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <p class="text-base font-normal">
+                            If this feels easy, good.
+                            HTML is the calm before CSS and JavaScript ruin your mental health.
+                        </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <script src="../script_src/index.js"></script>
+</body>
+
+</html>
