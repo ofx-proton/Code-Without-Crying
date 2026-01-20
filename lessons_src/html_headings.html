@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Headings: The "Who's Important?" Hierarchy</title>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css_src/index.css" />
+
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="../index.html" class="brand">
+                <svg width="64" height="32" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="24" font-family="monospace" font-size="24" font-weight="700" fill="currentColor">
+                        !< </text>
+                </svg>
+            </a>
+
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="../index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="../html_src/lessons.html" class="menu-link">Lessons</a></li>
+                    <li class="menu-item"><a href="../html_src/how_it_works.html" class="menu-link">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="overlay"></span>
+
+            <button type="button" class="menu-block">
+                <a href="../html_src/lessons.html" class="btn btn-neutral">All Lessons</a>
+            </button>
+        </nav>
+    </header>
+
+    <section class="section" style="padding-block: 5rem 0;">
+        <div class="container">
+            <nav class="lesson-breadcrumb">
+                <a href="../index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="../html_src/lessons.html" class="breadcrumb-link">Lessons</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">HTML Headings</span>
+            </nav>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="section" style="padding-block: 4rem;">
+            <div class="container">
+                <h1 class="title-large">HTML Headings: The "Who's Important?" Hierarchy</h1>
+                <br>
+                <p class="text-medium font-normal">If your webpage were a newspaper, Headings would be the giant bold
+                    text that shouts "Extra! Extra! Read All About It!" or "Local Man Forgets Closing Tag, Chaos
+                    Ensues."</p>
+            </div>
+        </section>
+
+
+
+        <section class="section" style="padding-block: 0 4rem;">
+            <div class="container lesson-content-wrapper">
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 1</span>
+                        <h2 class="lesson-part-title title-small">Headings: Size Matters (But Semantics Matter More)
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            Imagine reading a book where every single word was the exact same size. No chapters, no
+                            titles—just a wall of text. You'd lose your mind in five minutes.<br><br>
+                            Headings (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>) tell the browser (and
+                            Google) what the big ideas are. Browsers treat them like an outline for your brain.
+                        </p>
+
+
+
+                        <div class="lesson-steps">
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">1</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">The H1: The One True King</h3>
+                                    <p>The <code>&lt;h1&gt;</code> is the "Main Title." You should only have
+                                        <strong>one</strong> per page. It’s the name of the movie, the title of the
+                                        book, the "You Are Here" sign.</p>
+                                </div>
+                            </div>
+
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">2</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">H2 - H3: The Supporting Cast</h3>
+                                    <p><code>&lt;h2&gt;</code> are your major sections. <code>&lt;h3&gt;</code> are
+                                        sub-sections inside those. They keep your content from looking like a rambling
+                                        grocery list.</p>
+                                </div>
+                            </div>
+
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">3</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">H4 - H6: The Fine Print</h3>
+                                    <p>These are rarely used, like the "Terms and Conditions" or that one side character
+                                        in a sitcom who only has three lines. But they're there if you need deep
+                                        organization.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lesson-card-grid">
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-search-alt'></i>
+                                </div>
+                                <h3 class="lesson-card-title">SEO Gold</h3>
+                                <p class="lesson-card-text">
+                                    Google scans your headings to figure out what your site is about. Use keywords in
+                                    headings to make the algorithm happy.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-layer'></i>
+                                </div>
+                                <h3 class="lesson-card-title">Natural Flow</h3>
+                                <p class="lesson-card-text">
+                                    Don't jump from an <code>&lt;h1&gt;</code> straight to an <code>&lt;h4&gt;</code>.
+                                    It’s like skipping the first three steps of a ladder—awkward and potentially
+                                    painful.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-accessibility'></i>
+                                </div>
+                                <h3 class="lesson-card-title">Accessibility Hero</h3>
+                                <p class="lesson-card-text">
+                                    Visually impaired users use screen readers to "jump" between headings. Good
+                                    structure helps everyone navigate.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-highlight">
+                            <div class="lesson-highlight-icon">
+                                <i class='bx bx-error-circle'></i>
+                            </div>
+                            <div class="lesson-highlight-content">
+                                <h3 class="lesson-highlight-title">The "Big Text" Trap</h3>
+                                <p><strong>DO NOT</strong> use headings just because you want text to be bold or large.
+                                    That is what CSS is for. Use headings because the text <strong>IS</strong> a
+                                    heading. Respect the semantics!</p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML - Heading Levels</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;h1&gt;The Ultimate Guide to Pizza&lt;/h1&gt;
+
+&lt;h2&gt;Famous Pizza Styles&lt;/h2&gt;
+    &lt;h3&gt;New York Thin Crust&lt;/h3&gt;
+    &lt;h3&gt;Chicago Deep Dish&lt;/h3&gt;
+
+&lt;h2&gt;Topping Controversies&lt;/h2&gt;
+    &lt;h3&gt;Does Pineapple Belong?&lt;/h3&gt;
+        &lt;h4&gt;Arguments for "Yes"&lt;/h4&gt;
+        &lt;h4&gt;Arguments for "Absolutely Not"&lt;/h4&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 2</span>
+                        <h2 class="lesson-part-title title-small">Heading Etiquette: Being a Good Dev</h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            Browsers are pretty forgiving, but other developers (and Google) are not. Follow these rules
+                            to avoid getting "The Look" at code reviews.
+                        </p>
+
+                        <div class="lesson-box lesson-box-info">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-check-double'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">The One-H1 Rule</h3>
+                                <p>Think of <code>&lt;h1&gt;</code> as the name of your specific page. If you have five
+                                    H1s, the browser thinks your page is having an identity crisis. Keep it unique!</p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-box lesson-box-warning">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-paint-roll'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">Visuals vs. Structure</h3>
+                                <p>If you love the size of an <code>&lt;h3&gt;</code> but the text is actually the main
+                                    title, use an <code>&lt;h1&gt;</code> and change the size with CSS. Structure is for
+                                    the robots; Style is for the humans.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-summary">
+                    <h2 class="lesson-summary-title title-medium">Heading Takeaways (TL;DR)</h2>
+                    <div class="lesson-summary-content">
+                        <ul class="lesson-summary-list">
+                            <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> define importance, not just
+                                "big-ness."</li>
+                            <li>Only <strong>one</strong> H1 per page. No exceptions. No negotiations.</li>
+                            <li>Follow the ladder: H1 → H2 → H3. Don't skip rungs like a maniac.</li>
+                            <li>Headings help SEO and Screen Readers understand your page's vibe.</li>
+                            <li>Emmet shortcut: Just type <code>h1</code> and hit Tab.</li>
+                        </ul>
+                    </div>
+                </div>
+                <br><br>
+
+
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 3</span>
+                        <h2 class="lesson-part-title title-small">Headings & Emmet: Speed-Running Structure</h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            Why type eight characters when you can type two? Emmet makes building document outlines
+                            faster than you can say "semantic markup."
+                        </p>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">Emmet Magic for Headings</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>/* Type this → Get this after pressing Tab */
+
+h1 → &lt;h1&gt;&lt;/h1&gt;
+h2{Section} → &lt;h2&gt;Section&lt;/h2&gt;
+h3*3 → Generates three &lt;h3&gt; tags
+h1+h2+p → A Title, Subtitle, and Paragraph combo!</code></pre>
+                        </div>
+
+
+                        <div class="lesson-card-grid">
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-bracket'></i>
+                                </div>
+                                <h3 class="lesson-card-title">Curly Bracket Text</h3>
+                                <p class="lesson-card-text">
+                                    <code>h1{Hello World}</code><br>
+                                    = <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code><br>
+                                    Inserts the text inside the brackets instantly.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-list-ol'></i>
+                                </div>
+                                <h3 class="lesson-card-title">Numbered Headings</h3>
+                                <p class="lesson-card-text">
+                                    <code>h2{Chapter $}*3</code><br>
+                                    Generates Chapter 1, Chapter 2, and Chapter 3 in one go!
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-rocket'></i>
+                                </div>
+                                <h3 class="lesson-card-title">Sibling Shortcuts</h3>
+                                <p class="lesson-card-text">
+                                    <code>h1+h2</code> puts them side-by-side.<br>
+                                    Perfect for those "Title & Tagline" layouts.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-highlight">
+                            <div class="lesson-highlight-icon">
+                                <i class='bx bx-cool'></i>
+                            </div>
+                            <div class="lesson-highlight-content">
+                                <h3 class="lesson-highlight-title">The "Insta-Article" Combo</h3>
+                                <p>Try this in VS Code:<br>
+                                    <code>h1{Blog}+h2{Intro}+p+h2{Content}+h3*2{Detail}+p</code><br>
+                                    You just built a professional blog post structure in 3 seconds.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-box lesson-box-info">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-joystick'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">Emmet Game: Practice Round</h3>
+                                <p>Open your editor and try these. If you feel like a wizard, that's normal.</p>
+                                <ol style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                                    <li><code>h1{The Legend of Coding}</code></li>
+                                    <li><code>h2{Boss Level $}*5</code></li>
+                                    <li><code>header>h1{Site Title}+nav>ul>li*3</code></li>
+                                </ol>
+                                <p style="margin-top: 0.5rem;">The power is in your fingertips. Use it wisely.</p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-quote">
+                            <div class="lesson-quote-icon">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <blockquote class="lesson-quote-text">
+                                "If your H1 is 'Welcome to my site,' you've wasted your most powerful SEO tool. Make it
+                                count."
+                            </blockquote>
+                            <p class="lesson-quote-author">— A Developer who actually gets traffic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="section" style="padding-block: 2rem 4rem;">
+                    <div class="container">
+                        <nav class="lesson-navigation">
+                            <a href="html_attributes.html" class="lesson-nav-btn lesson-nav-prev">
+                                <span class="lesson-nav-label">
+                                    <i class='bx bx-chevron-left'></i>
+                                    Previous
+                                </span>
+                                <span class="lesson-nav-title">HTML Attributes<br>Your Tags' Secret Superpowers</span>
+                            </a>
+
+                            <a href="#" class="lesson-nav-btn lesson-nav-next">
+                                <span class="lesson-nav-label">
+                                    Next
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                                <span class="lesson-nav-title">Coming Soon</span>
+                            </a>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script_src/index.js"></script>
+</body>
+
+</html>
