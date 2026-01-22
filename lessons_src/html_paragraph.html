@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Paragraphs | Lesson</title>
+    <title>Your Page Title</title>
 
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -12,20 +12,18 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="../css_src/index.css" />
 
-    <!-- Lesson CSS -->
+    <!-- Lesson CSS (if needed) -->
     <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-
     <!-- Header -->
     <header class="header" id="header">
         <nav class="navbar container">
             <a href="../index.html" class="brand">
                 <svg width="64" height="32" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
                     <text x="0" y="24" font-family="monospace" font-size="24" font-weight="700" fill="currentColor">
-                        !<
-                    </text>
+                        !< </text>
                 </svg>
             </a>
 
@@ -39,7 +37,8 @@
                 <ul class="menu-inner">
                     <li class="menu-item"><a href="../index.html" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="../html_src/lessons.html" class="menu-link">Lessons</a></li>
-                    <li class="menu-item"><a href="../html_src/how_it_works.html" class="menu-link">How It Works</a></li>
+                    <li class="menu-item"><a href="../html_src/how_it_works.html" class="menu-link">How It Works</a>
+                    </li>
                 </ul>
             </div>
 
@@ -50,7 +49,6 @@
             </button>
         </nav>
     </header>
-
     <!-- Breadcrumb -->
     <section class="section" style="padding-block: 5rem 0;">
         <div class="container">
@@ -64,40 +62,26 @@
         </div>
     </section>
 
-    <!-- Main -->
+
+    <!-- Main Content Area -->
     <main class="main">
+        <!-- Your content goes here -->
+        <section class="section" style="padding-block: 4rem;">
+            <div class="container">
+                <!-- Your content here -->
 
-        <section class="section" style="padding-block: 0 4rem;">
-            <div class="container lesson-content-wrapper">
 
-                <!-- Lesson Header -->
-                <section class="section" style="padding-block: 2rem;">
-                    <div class="container lesson-header-wrapper">
-                        <h1 class="title-large">HTML Paragraphs</h1>
+                <h1 class="title-large">HTML Paragraphs</h1>
+                <p class="text-medium font-normal">Everything you need to know about paragraphs without falling asleep.
+                    We'll cover the syntax, the pitfalls, and why your text doesn't need to be one unbroken stream of
+                    consciousness.</p>
+            </div>
 
-                        <p class="lesson-description text-medium font-normal">
-                            Everything you need to know about paragraphs without falling asleep. We'll cover the syntax, the pitfalls, and why your text doesn't need to be one unbroken stream of consciousness.
-                        </p>
+            <section class="section" style="padding-block: 0 4rem;">
+                <div class="container lesson-content-wrapper">
+                    <!-- ALL lesson components go here -->
+                    <br>
 
-                        <div class="lesson-meta">
-                            <span class="lesson-meta-item">
-                                <i class='bx bx-time-five'></i>
-                                <span>12 min read</span>
-                            </span>
-                            <span class="lesson-meta-item">
-                                <i class='bx bx-layer'></i>
-                                <span>Beginner</span>
-                            </span>
-                            <span class="lesson-meta-item">
-                                <i class='bx bx-purchase-tag'></i>
-                                <span>HTML</span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="lesson-divider"></div>
-
-                    <!-- PART 1: THE FUNDAMENTALS -->
                     <div class="lesson-part">
                         <div class="lesson-part-header">
                             <span class="lesson-part-number">Part 1</span>
@@ -106,20 +90,25 @@
 
                         <div class="lesson-part-content">
                             <p class="text-base font-normal">
-                                A paragraph in HTML is created with the <code>&lt;p&gt;</code> tag. It's a block-level element, meaning it takes up the full width available and always starts on a new line. Think of it as the introvert of HTML—it needs its personal space.
+                                A paragraph in HTML is created with the <code>&lt;p&gt;</code> tag. It's a block-level
+                                element, meaning it takes up the full width available and always starts on a new line.
+                                Think of it as the introvert of HTML—it needs its personal space.
                             </p>
 
                             <div class="lesson-code">
                                 <div class="lesson-code-header">
                                     <span class="lesson-code-label">HTML</span>
                                 </div>
-                                <pre class="lesson-code-block"><code>&lt;p&gt;This is a paragraph. It contains text.&lt;/p&gt;
+                                <pre
+                                    class="lesson-code-block"><code>&lt;p&gt;This is a paragraph. It contains text.&lt;/p&gt;
 &lt;p&gt;This is another paragraph. Notice the spacing.&lt;/p&gt;
 &lt;p&gt;Paragraphs prevent your content from becoming an overwhelming wall of text that nobody wants to read.&lt;/p&gt;</code></pre>
                             </div>
 
                             <p class="text-base font-normal">
-                                Browsers automatically add vertical spacing (margins) before and after each paragraph. This isn't magic—it's default CSS that every browser applies. The exact spacing varies slightly between browsers, but they all agree that paragraphs deserve breathing room.
+                                Browsers automatically add vertical spacing (margins) before and after each paragraph.
+                                This isn't magic—it's default CSS that every browser applies. The exact spacing varies
+                                slightly between browsers, but they all agree that paragraphs deserve breathing room.
                             </p>
 
                             <div class="lesson-box lesson-box-info">
@@ -129,7 +118,12 @@
                                 <div class="lesson-box-content">
                                     <h3 class="lesson-box-title">Block vs Inline Elements</h3>
                                     <p>
-                                        Block elements like <code>&lt;p&gt;</code> create new lines and stretch to fill available width. Inline elements like <code>&lt;span&gt;</code> or <code>&lt;strong&gt;</code> flow within text without breaking lines. You can put inline elements inside paragraphs, but never nest one paragraph inside another—HTML will close the first paragraph automatically and rearrange your markup like a judgmental interior designer.
+                                        Block elements like <code>&lt;p&gt;</code> create new lines and stretch to fill
+                                        available width. Inline elements like <code>&lt;span&gt;</code> or
+                                        <code>&lt;strong&gt;</code> flow within text without breaking lines. You can put
+                                        inline elements inside paragraphs, but never nest one paragraph inside
+                                        another—HTML will close the first paragraph automatically and rearrange your
+                                        markup like a judgmental interior designer.
                                     </p>
                                 </div>
                             </div>
@@ -139,7 +133,10 @@
                                     <div class="lesson-step-number">1</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Whitespace Collapsing</h3>
-                                        <p>HTML collapses multiple spaces, tabs, and line breaks into a single space. You can press Enter forty times in your code—the browser will render it as one space. This behavior keeps layouts consistent regardless of how messy your source code is.</p>
+                                        <p>HTML collapses multiple spaces, tabs, and line breaks into a single space.
+                                            You can press Enter forty times in your code—the browser will render it as
+                                            one space. This behavior keeps layouts consistent regardless of how messy
+                                            your source code is.</p>
                                     </div>
                                 </div>
 
@@ -147,7 +144,9 @@
                                     <div class="lesson-step-number">2</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Default Styling</h3>
-                                        <p>Every browser applies a user agent stylesheet with default paragraph margins (typically 1em top and bottom). You can override these with your own CSS, but the defaults exist to make unstyled HTML at least somewhat readable.</p>
+                                        <p>Every browser applies a user agent stylesheet with default paragraph margins
+                                            (typically 1em top and bottom). You can override these with your own CSS,
+                                            but the defaults exist to make unstyled HTML at least somewhat readable.</p>
                                     </div>
                                 </div>
 
@@ -155,7 +154,10 @@
                                     <div class="lesson-step-number">3</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Semantic Meaning</h3>
-                                        <p>Using <code>&lt;p&gt;</code> tells browsers, search engines, and assistive technologies "this is a paragraph of text." This semantic meaning helps screen readers navigate content and gives search engines context about your content structure.</p>
+                                        <p>Using <code>&lt;p&gt;</code> tells browsers, search engines, and assistive
+                                            technologies "this is a paragraph of text." This semantic meaning helps
+                                            screen readers navigate content and gives search engines context about your
+                                            content structure.</p>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +177,9 @@
                             </div>
 
                             <p class="text-base font-normal">
-                                If you actually need to preserve formatting with spaces and line breaks intact, use the <code>&lt;pre&gt;</code> (preformatted) tag instead. It's specifically designed for code snippets, ASCII art, or any content where spacing matters.
+                                If you actually need to preserve formatting with spaces and line breaks intact, use the
+                                <code>&lt;pre&gt;</code> (preformatted) tag instead. It's specifically designed for code
+                                snippets, ASCII art, or any content where spacing matters.
                             </p>
 
                             <div class="lesson-box lesson-box-warning">
@@ -185,7 +189,11 @@
                                 <div class="lesson-box-content">
                                     <h3 class="lesson-box-title">The Empty Paragraph Crime</h3>
                                     <p>
-                                        Never use empty <code>&lt;p&gt;&lt;/p&gt;</code> tags to create vertical space. It's semantically wrong, creates confusion for screen readers (they'll announce empty paragraphs), and CSS exists specifically to handle spacing. Use margins or padding instead. This is one of those things that might work but will haunt you later.
+                                        Never use empty <code>&lt;p&gt;&lt;/p&gt;</code> tags to create vertical space.
+                                        It's semantically wrong, creates confusion for screen readers (they'll announce
+                                        empty paragraphs), and CSS exists specifically to handle spacing. Use margins or
+                                        padding instead. This is one of those things that might work but will haunt you
+                                        later.
                                     </p>
                                 </div>
                             </div>
@@ -196,12 +204,15 @@
                     <div class="lesson-part">
                         <div class="lesson-part-header">
                             <span class="lesson-part-number">Part 2</span>
-                            <h2 class="lesson-part-title title-small">Styling and Layout: Making Paragraphs Actually Readable</h2>
+                            <h2 class="lesson-part-title title-small">Styling and Layout: Making Paragraphs Actually
+                                Readable</h2>
                         </div>
 
                         <div class="lesson-part-content">
                             <p class="text-base font-normal">
-                                HTML provides the structure, but CSS does all the heavy lifting when it comes to appearance. Typography, spacing, colors, alignment—that's all CSS territory. And thankfully, CSS gives you precise control over every aspect of how your paragraphs look.
+                                HTML provides the structure, but CSS does all the heavy lifting when it comes to
+                                appearance. Typography, spacing, colors, alignment—that's all CSS territory. And
+                                thankfully, CSS gives you precise control over every aspect of how your paragraphs look.
                             </p>
 
                             <div class="lesson-code">
@@ -238,7 +249,11 @@ article p:first-of-type::first-letter {
                             </div>
 
                             <p class="text-base font-normal">
-                                The <code>max-width: 65ch;</code> property deserves special attention. Research shows that lines between 45-75 characters are optimal for reading. Beyond that, readers lose their place when moving from the end of one line to the beginning of the next. The <code>ch</code> unit represents the width of the "0" character in the current font, making it perfect for controlling line length.
+                                The <code>max-width: 65ch;</code> property deserves special attention. Research shows
+                                that lines between 45-75 characters are optimal for reading. Beyond that, readers lose
+                                their place when moving from the end of one line to the beginning of the next. The
+                                <code>ch</code> unit represents the width of the "0" character in the current font,
+                                making it perfect for controlling line length.
                             </p>
 
                             <div class="lesson-steps">
@@ -246,7 +261,9 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">1</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Line Height (Leading)</h3>
-                                        <p>Line height between 1.5 and 1.6 works for most body text. Tighter looks cramped, looser feels disconnected. For headings, you can go tighter (1.2-1.3) since they're larger and already well-spaced.</p>
+                                        <p>Line height between 1.5 and 1.6 works for most body text. Tighter looks
+                                            cramped, looser feels disconnected. For headings, you can go tighter
+                                            (1.2-1.3) since they're larger and already well-spaced.</p>
                                     </div>
                                 </div>
 
@@ -254,7 +271,10 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">2</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Text Alignment</h3>
-                                        <p>For body text, use <code>text-align: left;</code> (or right for RTL languages). Never justify body text—it creates uneven spacing between words that makes reading harder. Centered text is for short content like headings or captions, not paragraphs.</p>
+                                        <p>For body text, use <code>text-align: left;</code> (or right for RTL
+                                            languages). Never justify body text—it creates uneven spacing between words
+                                            that makes reading harder. Centered text is for short content like headings
+                                            or captions, not paragraphs.</p>
                                     </div>
                                 </div>
 
@@ -262,7 +282,9 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">3</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Spacing Systems</h3>
-                                        <p>Use consistent spacing multiples. If your base spacing is 1rem, use 0.5rem, 1rem, 1.5rem, 2rem, etc. This creates visual rhythm and makes your design feel cohesive instead of randomly spaced.</p>
+                                        <p>Use consistent spacing multiples. If your base spacing is 1rem, use 0.5rem,
+                                            1rem, 1.5rem, 2rem, etc. This creates visual rhythm and makes your design
+                                            feel cohesive instead of randomly spaced.</p>
                                     </div>
                                 </div>
 
@@ -270,7 +292,9 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">4</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Responsive Typography</h3>
-                                        <p>Use relative units (rem, em) instead of pixels so text scales with user preferences. Someone with visual impairments might set their browser to 150% zoom—your layout should respect that.</p>
+                                        <p>Use relative units (rem, em) instead of pixels so text scales with user
+                                            preferences. Someone with visual impairments might set their browser to 150%
+                                            zoom—your layout should respect that.</p>
                                     </div>
                                 </div>
                             </div>
@@ -282,7 +306,12 @@ article p:first-of-type::first-letter {
                                 <div class="lesson-box-content">
                                     <h3 class="lesson-box-title">Nesting Other Elements</h3>
                                     <p>
-                                        You can nest inline elements inside paragraphs: <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;span&gt;</code>, etc. These flow with the text. However, block-level elements like <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, or another <code>&lt;p&gt;</code> cannot go inside paragraphs. The browser will automatically close your paragraph tag and restructure your HTML if you try.
+                                        You can nest inline elements inside paragraphs: <code>&lt;strong&gt;</code>,
+                                        <code>&lt;em&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;code&gt;</code>,
+                                        <code>&lt;span&gt;</code>, etc. These flow with the text. However, block-level
+                                        elements like <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, or another
+                                        <code>&lt;p&gt;</code> cannot go inside paragraphs. The browser will
+                                        automatically close your paragraph tag and restructure your HTML if you try.
                                     </p>
                                 </div>
                             </div>
@@ -301,7 +330,10 @@ article p:first-of-type::first-letter {
                             </div>
 
                             <p class="text-base font-normal">
-                                Here's the crucial distinction between line breaks and paragraphs: the <code>&lt;br&gt;</code> tag creates a line break within the same paragraph without adding extra spacing. Use it for addresses, poetry, or song lyrics—situations where line breaks are part of the content's meaning, not just layout preferences.
+                                Here's the crucial distinction between line breaks and paragraphs: the
+                                <code>&lt;br&gt;</code> tag creates a line break within the same paragraph without
+                                adding extra spacing. Use it for addresses, poetry, or song lyrics—situations where line
+                                breaks are part of the content's meaning, not just layout preferences.
                             </p>
 
                             <div class="lesson-code">
@@ -330,7 +362,10 @@ article p:first-of-type::first-letter {
                                 <div class="lesson-box-content">
                                     <h3 class="lesson-box-title">Don't Abuse Line Breaks</h3>
                                     <p>
-                                        Don't use multiple <code>&lt;br&gt;</code> tags to create vertical spacing. That's what margins are for. Using <code>&lt;br&gt;&lt;br&gt;&lt;br&gt;</code> to push content down is the HTML equivalent of using the spacebar to align text in a document—technically functional, but wrong on every level that matters.
+                                        Don't use multiple <code>&lt;br&gt;</code> tags to create vertical spacing.
+                                        That's what margins are for. Using <code>&lt;br&gt;&lt;br&gt;&lt;br&gt;</code>
+                                        to push content down is the HTML equivalent of using the spacebar to align text
+                                        in a document—technically functional, but wrong on every level that matters.
                                     </p>
                                 </div>
                             </div>
@@ -341,12 +376,16 @@ article p:first-of-type::first-letter {
                     <div class="lesson-part">
                         <div class="lesson-part-header">
                             <span class="lesson-part-number">Part 3</span>
-                            <h2 class="lesson-part-title title-small">Advanced Concepts: Semantic HTML and Edge Cases</h2>
+                            <h2 class="lesson-part-title title-small">Advanced Concepts: Semantic HTML and Edge Cases
+                            </h2>
                         </div>
 
                         <div class="lesson-part-content">
                             <p class="text-base font-normal">
-                                Not everything that looks like a paragraph should be marked up as one. HTML has specific elements for different types of content, and using the right tag matters for accessibility, SEO, and maintainability. This is what "semantic HTML" means—using tags that describe the content's meaning, not just its appearance.
+                                Not everything that looks like a paragraph should be marked up as one. HTML has specific
+                                elements for different types of content, and using the right tag matters for
+                                accessibility, SEO, and maintainability. This is what "semantic HTML" means—using tags
+                                that describe the content's meaning, not just its appearance.
                             </p>
 
                             <div class="lesson-steps">
@@ -354,7 +393,12 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">1</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Use Lists, Not Paragraphs</h3>
-                                        <p>If you're listing items, use <code>&lt;ul&gt;</code> (unordered), <code>&lt;ol&gt;</code> (ordered), or <code>&lt;dl&gt;</code> (definition lists). Don't use paragraphs with bullets or numbers at the start. Screen readers announce lists differently and let users skip through items efficiently.</p>
+                                        <p>If you're listing items, use <code>&lt;ul&gt;</code> (unordered),
+                                            <code>&lt;ol&gt;</code> (ordered), or <code>&lt;dl&gt;</code> (definition
+                                            lists). Don't use paragraphs with bullets or numbers at the start. Screen
+                                            readers announce lists differently and let users skip through items
+                                            efficiently.
+                                        </p>
                                     </div>
                                 </div>
 
@@ -362,7 +406,11 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">2</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Use Blockquotes for Quotes</h3>
-                                        <p>Quotations belong in <code>&lt;blockquote&gt;</code> elements, not styled paragraphs. This tells browsers and assistive technology that the content is quoted from another source. You can include the citation with <code>&lt;cite&gt;</code> inside the blockquote.</p>
+                                        <p>Quotations belong in <code>&lt;blockquote&gt;</code> elements, not styled
+                                            paragraphs. This tells browsers and assistive technology that the content is
+                                            quoted from another source. You can include the citation with
+                                            <code>&lt;cite&gt;</code> inside the blockquote.
+                                        </p>
                                     </div>
                                 </div>
 
@@ -370,7 +418,10 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">3</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Use Pre and Code for Code</h3>
-                                        <p>Code blocks need <code>&lt;pre&gt;&lt;code&gt;</code> tags, not paragraphs with monospace fonts. The <code>&lt;pre&gt;</code> tag preserves formatting and whitespace, while <code>&lt;code&gt;</code> indicates the content is computer code. For inline code, use just <code>&lt;code&gt;</code>.</p>
+                                        <p>Code blocks need <code>&lt;pre&gt;&lt;code&gt;</code> tags, not paragraphs
+                                            with monospace fonts. The <code>&lt;pre&gt;</code> tag preserves formatting
+                                            and whitespace, while <code>&lt;code&gt;</code> indicates the content is
+                                            computer code. For inline code, use just <code>&lt;code&gt;</code>.</p>
                                     </div>
                                 </div>
 
@@ -378,7 +429,10 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">4</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Use Address for Contact Info</h3>
-                                        <p>Contact information belongs in <code>&lt;address&gt;</code> elements. This indicates the content is specifically contact details, not generic text. Screen readers can identify and navigate to contact information specifically.</p>
+                                        <p>Contact information belongs in <code>&lt;address&gt;</code> elements. This
+                                            indicates the content is specifically contact details, not generic text.
+                                            Screen readers can identify and navigate to contact information
+                                            specifically.</p>
                                     </div>
                                 </div>
 
@@ -386,7 +440,11 @@ article p:first-of-type::first-letter {
                                     <div class="lesson-step-number">5</div>
                                     <div class="lesson-step-content">
                                         <h3 class="lesson-step-title">Use Figure and Figcaption</h3>
-                                        <p>If you're adding captions to images, diagrams, or code examples, use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>. Don't use a paragraph below an image and hope CSS keeps them together—figures are semantically grouped.</p>
+                                        <p>If you're adding captions to images, diagrams, or code examples, use
+                                            <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>. Don't use a
+                                            paragraph below an image and hope CSS keeps them together—figures are
+                                            semantically grouped.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -424,13 +482,19 @@ article p:first-of-type::first-letter {
                                 <div class="lesson-box-content">
                                     <h3 class="lesson-box-title">Why Semantic HTML Matters</h3>
                                     <p>
-                                        Using the right HTML elements isn't pedantic perfectionism—it has real consequences. Screen readers navigate differently based on element types. Search engines understand content structure better. Browser reader modes extract content more accurately. Future developers (including yourself) understand the code faster. And CSS becomes easier because you can style elements based on what they are, not what classes you remembered to add.
+                                        Using the right HTML elements isn't pedantic perfectionism—it has real
+                                        consequences. Screen readers navigate differently based on element types. Search
+                                        engines understand content structure better. Browser reader modes extract
+                                        content more accurately. Future developers (including yourself) understand the
+                                        code faster. And CSS becomes easier because you can style elements based on what
+                                        they are, not what classes you remembered to add.
                                     </p>
                                 </div>
                             </div>
 
                             <p class="text-base font-normal">
-                                Here's a practical example that pulls everything together. Notice how semantic HTML creates a clear content structure without needing classes for every element:
+                                Here's a practical example that pulls everything together. Notice how semantic HTML
+                                creates a clear content structure without needing classes for every element:
                             </p>
 
                             <div class="lesson-code">
@@ -536,23 +600,32 @@ article code {
                                 <div class="lesson-box-content">
                                     <h3 class="lesson-box-title">Final Warning About Divitis</h3>
                                     <p>
-                                        Don't wrap every paragraph in a <code>&lt;div&gt;</code> just to add styling. If you need to style paragraphs differently, use classes directly on the <code>&lt;p&gt;</code> tag or target them with CSS selectors. Unnecessary wrapper divs add bloat, complexity, and make your HTML harder to maintain. Every <code>&lt;div&gt;</code> should have a purpose—if you can't explain why it exists, it probably shouldn't.
+                                        Don't wrap every paragraph in a <code>&lt;div&gt;</code> just to add styling. If
+                                        you need to style paragraphs differently, use classes directly on the
+                                        <code>&lt;p&gt;</code> tag or target them with CSS selectors. Unnecessary
+                                        wrapper divs add bloat, complexity, and make your HTML harder to maintain. Every
+                                        <code>&lt;div&gt;</code> should have a purpose—if you can't explain why it
+                                        exists, it probably shouldn't.
                                     </p>
                                 </div>
                             </div>
 
                             <p class="text-base font-normal">
-                                That's the complete picture of HTML paragraphs. Use <code>&lt;p&gt;</code> for actual paragraphs. Style them with CSS. Choose semantic elements for non-paragraph content. Keep line lengths readable. And never, ever use empty tags for spacing. Follow these principles and your HTML will be cleaner, more accessible, and easier to maintain. Your future self will thank you.
+                                That's the complete picture of HTML paragraphs. Use <code>&lt;p&gt;</code> for actual
+                                paragraphs. Style them with CSS. Choose semantic elements for non-paragraph content.
+                                Keep line lengths readable. And never, ever use empty tags for spacing. Follow these
+                                principles and your HTML will be cleaner, more accessible, and easier to maintain. Your
+                                future self will thank you.
                             </p>
                         </div>
                     </div>
-
                     <!-- SUMMARY -->
                     <div class="lesson-summary">
                         <h2 class="lesson-summary-title title-medium">What You Learned</h2>
                         <div class="lesson-summary-content">
                             <ul class="lesson-summary-list">
-                                <li>Paragraphs use <code>&lt;p&gt;</code> tags and are block-level elements with automatic spacing</li>
+                                <li>Paragraphs use <code>&lt;p&gt;</code> tags and are block-level elements with
+                                    automatic spacing</li>
                                 <li>HTML collapses whitespace—use <code>&lt;pre&gt;</code> when spacing matters</li>
                                 <li>Never use empty paragraphs for spacing—use CSS margins instead</li>
                                 <li>Inline elements can nest inside paragraphs, but not block elements</li>
@@ -588,14 +661,13 @@ article code {
                             </nav>
                         </div>
                     </section>
+                </div>
+            </section>
 
-                </section>
-            </div>
-        </section>
     </main>
 
     <!-- JS -->
     <script src="../script_src/index.js"></script>
-
 </body>
+
 </html>
