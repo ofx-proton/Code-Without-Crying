@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tables</title>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css_src/index.css" />
+
+    <!-- Lesson CSS -->
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="../index.html" class="brand">
+                <svg width="64" height="32" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="24" font-family="monospace" font-size="24" font-weight="700" fill="currentColor">
+                        !< </text>
+                </svg>
+            </a>
+
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="../index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="../html_src/lessons.html" class="menu-link">Lessons</a></li>
+                    <li class="menu-item"><a href="../html_src/how_it_works.html" class="menu-link">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="overlay"></span>
+
+            <button type="button" class="menu-block">
+                <a href="../html_src/lessons.html" class="btn btn-neutral">All Lessons</a>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="section" style="padding-block: 5rem 0;">
+        <div class="container">
+            <nav class="lesson-breadcrumb">
+                <a href="../index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="../html_src/lessons.html" class="breadcrumb-link">Lessons</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">HTML Tables</span>
+            </nav>
+        </div>
+    </section>
+
+    <main class="main">
+
+        <!-- Lesson Header -->
+        <section class="section" style="padding-block: 2rem;">
+            <div class="container lesson-header-wrapper">
+                <h1 class="title-large">HTML Tables</h1>
+
+                <p class="lesson-description text-medium font-normal">
+                    HTML Tables are the thing you think you understand until you try to make one.
+                    Then suddenly one cell moves and the whole table looks offended.
+                    I still don’t fully understand them, but neither did my teachers,
+                    so welcome to the tradition.
+                </p>
+
+                <div class="lesson-meta">
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-time-five'></i>
+                        <span>8 min read</span>
+                    </span>
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-layer'></i>
+                        <span>Beginner</span>
+                    </span>
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-purchase-tag'></i>
+                        <span>HTML</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-block: 0 4rem;">
+            <div class="container lesson-content-wrapper">
+
+                <div class="lesson-box lesson-box-warning">
+                    <div class="lesson-box-icon">
+                        <i class='bx bx-error'></i>
+                    </div>
+                    <div class="lesson-box-content">
+                        <h3 class="lesson-box-title">Reality Check</h3>
+                        <p>
+                            Tables are not hard because they’re complex.
+                            They’re hard because one missing tag breaks everything
+                            and the browser refuses to explain why.
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- PART 1 -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 1</span>
+                        <h2 class="lesson-part-title title-small">
+                            The Basic Structure (This Is Where Everyone Starts)
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            A table is just rows inside a table, and cells inside rows.
+                            That’s it. That’s the lie we tell beginners.
+                            Here’s the smallest table that still counts as a table:
+                        </p>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Hello&lt;/td&gt;
+        &lt;td&gt;World&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                        </div>
+
+                        <p class="text-base font-normal">
+                            If you forget <code>&lt;tr&gt;</code>, the browser panics quietly.
+                            If you forget <code>&lt;td&gt;</code>, nothing shows up.
+                            This is normal. This is pain.
+                        </p>
+
+                        <div class="lesson-card-grid">
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-grid'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;table&gt;</h3>
+                                <p class="lesson-card-text">
+                                    The outer box. Everything lives inside this.
+                                    Without it, you’re just stacking random tags.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-list-ul'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;tr&gt;</h3>
+                                <p class="lesson-card-text">
+                                    One row. Think horizontal.
+                                    If your data looks vertical, you messed up here.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-columns'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;td&gt;</h3>
+                                <p class="lesson-card-text">
+                                    One cell. This is where actual content goes.
+                                    Text, numbers, regret.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PART 2 -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 2</span>
+                        <h2 class="lesson-part-title title-small">
+                            Headers: Making Tables Look Like You Know What You’re Doing
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            Table headers exist so people understand your data
+                            without guessing. Also screen readers.
+                            Also your future self after three weeks.
+                        </p>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Me&lt;/td&gt;
+        &lt;td&gt;Mentally 12&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                        </div>
+
+                        <p class="text-base font-normal">
+                            <code>&lt;th&gt;</code> is just like <code>&lt;td&gt;</code>
+                            but louder and more confident.
+                            Browsers bold it automatically so you feel productive.
+                        </p>
+
+                        <div class="lesson-steps">
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">1</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">Why &lt;th&gt; Matters</h3>
+                                    <p>Headers aren't just for looks—they give your table meaning. Screen readers use
+                                        them to help visually impaired users understand your data structure. Plus, they
+                                        make your table look like you actually planned it.</p>
+                                    <br>
+                                    <div class="lesson-code">
+                                        <div class="lesson-code-header">
+                                            <span class="lesson-code-label">HTML</span>
+                                        </div>
+                                        <pre class="lesson-code-block"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Task&lt;/th&gt;
+        &lt;th&gt;Status&lt;/th&gt;
+        &lt;th&gt;Likelihood of Completion&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Learn Tables&lt;/td&gt;
+        &lt;td&gt;In Progress&lt;/td&gt;
+        &lt;td&gt;Maybe&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">2</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">Scope Attribute: The Secret Table Handshake</h3>
+                                    <p>The <code>scope</code> attribute tells browsers whether a header applies to a
+                                        column or row. It's like labeling your leftovers so people know what they're
+                                        eating.</p>
+                                    <br>
+                                    <div class="lesson-code">
+                                        <div class="lesson-code-header">
+                                            <span class="lesson-code-label">HTML</span>
+                                        </div>
+                                        <pre class="lesson-code-block"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th scope="col"&gt;Month&lt;/th&gt;
+        &lt;th scope="col"&gt;Coffee Cups&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th scope="row"&gt;January&lt;/th&gt;
+        &lt;td&gt;Too many&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                    </div>
+                                    <br>
+                                    <div class="lesson-highlight">
+                                        <div class="lesson-highlight-icon">
+                                            <i class='bx bx-bulb'></i>
+                                        </div>
+                                        <div class="lesson-highlight-content">
+                                            <h3 class="lesson-highlight-title">Accessibility Tip</h3>
+                                            <p>Always use <code>scope="col"</code> for column headers and
+                                                <code>scope="row"</code> for row headers. Screen readers will thank you,
+                                                and your table will actually make sense to everyone.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PART 3 -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 3</span>
+                        <h2 class="lesson-part-title title-small">
+                            Table Structure: The Professional's Toolkit
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            Real tables need more than just cells. They need organization, sections, and semantic
+                            meaning. Otherwise, you're just stacking divs with extra steps.
+                        </p>
+
+                        <div class="lesson-card-grid">
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-heading'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;thead&gt; - The Header Section</h3>
+                                <p class="lesson-card-text">
+                                    Groups your header rows together. Perfect for when your table has multiple header
+                                    rows or when you want to style headers separately. Think of it as the "introductory
+                                    paragraph" of your table.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-body'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;tbody&gt; - The Main Content</h3>
+                                <p class="lesson-card-text">
+                                    Where your actual data lives. Every table should have one (even if you don't write
+                                    it, the browser adds it). This is the "story" part of your table.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-chevron-right'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;tfoot&gt; - The Footer</h3>
+                                <p class="lesson-card-text">
+                                    For summaries, totals, or closing remarks. Browsers will display it at the bottom,
+                                    even if you put it before &lt;tbody&gt; in your code. Magic!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;Project&lt;/th&gt;
+            &lt;th scope="col"&gt;Hours Estimated&lt;/th&gt;
+            &lt;th scope="col"&gt;Hours Actual&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Fix Bug&lt;/td&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;7&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Center Div&lt;/td&gt;
+            &lt;td&gt;0.5&lt;/td&gt;
+            &lt;td&gt;∞&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Total&lt;/td&gt;
+            &lt;td&gt;1.5&lt;/td&gt;
+            &lt;td&gt;Infinity&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                        </div>
+
+                        <div class="lesson-highlight">
+                            <div class="lesson-highlight-icon">
+                                <i class='bx bx-bulb'></i>
+                            </div>
+                            <div class="lesson-highlight-content">
+                                <h3 class="lesson-highlight-title">Semantic Structure Matters</h3>
+                                <p>Using &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; isn't just about
+                                    organization—it helps screen readers, improves SEO, and makes styling easier. Plus,
+                                    you'll feel like a table wizard.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PART 4 -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 4</span>
+                        <h2 class="lesson-part-title title-small">
+                            Captions: Giving Your Table a Title (Because Names Matter)
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            A caption is like giving your table a name tag at a party. It tells everyone what this table
+                            is about before they awkwardly stare at it trying to figure it out.
+                        </p>
+
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;table&gt;
+    &lt;caption&gt;
+        My Attempt at Productivity (Spoiler: It Failed)
+    &lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Time&lt;/th&gt;
+        &lt;th&gt;Planned Task&lt;/th&gt;
+        &lt;th&gt;Actual Task&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;9:00 AM&lt;/td&gt;
+        &lt;td&gt;Code Review&lt;/td&gt;
+        &lt;td&gt;Watch Cat Videos&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                        </div>
+
+                        <div class="lesson-steps">
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">1</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">Caption Placement</h3>
+                                    <p>The &lt;caption&gt; tag must come immediately after the opening &lt;table&gt;
+                                        tag. Put it anywhere else, and the browser will silently judge you.</p>
+                                    <br>
+                                    <div class="lesson-highlight">
+                                        <div class="lesson-highlight-icon">
+                                            <i class='bx bx-bulb'></i>
+                                        </div>
+                                        <div class="lesson-highlight-content">
+                                            <h3 class="lesson-highlight-title">Best Practice</h3>
+                                            <p>Keep captions short and descriptive. "Quarterly Sales" is good. "The
+                                                table where I track stuff that maybe matters sometimes but probably not"
+                                                is less good.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-highlight">
+                    <div class="lesson-highlight-icon">
+                        <i class='bx bx-bulb'></i>
+                    </div>
+                    <div class="lesson-highlight-content">
+                        <h3 class="lesson-highlight-title">Important Truth</h3>
+                        <p>
+                            If your table looks wrong,
+                            check your row structure first.
+                            90% of table bugs live there,
+                            quietly judging you.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lesson-divider"></div>
+
+                <div class="lesson-box">
+                    <div class="lesson-box-icon">
+                        <i class='bx bx-check-circle'></i>
+                    </div>
+                    <div class="lesson-box-content">
+                        <h3 class="lesson-box-title">Quick Reference: Table Tag Cheat Sheet</h3>
+                        <p>
+                            <strong>&lt;table&gt;</strong> - The container. Start here.<br>
+                            <strong>&lt;caption&gt;</strong> - Table title (optional but recommended).<br>
+                            <strong>&lt;thead&gt;</strong> - Header section (optional).<br>
+                            <strong>&lt;tbody&gt;</strong> - Main content (always created by browser if missing).<br>
+                            <strong>&lt;tfoot&gt;</strong> - Footer section (optional).<br>
+                            <strong>&lt;tr&gt;</strong> - Table row (required for data).<br>
+                            <strong>&lt;th&gt;</strong> - Header cell (bold by default).<br>
+                            <strong>&lt;td&gt;</strong> - Data cell (where your content lives).
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="lesson-quote">
+                    <div class="lesson-quote-icon">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <blockquote class="lesson-quote-text">
+                        “HTML tables are simple until colspan shows up,
+                        then it’s geometry with emotional damage.”
+                    </blockquote>
+                    <p class="lesson-quote-author">— A Developer, Probably You Soon</p>
+                </div>
+
+                <section class="section" style="padding-block: 2rem 4rem;">
+                    <div class="container">
+                        <nav class="lesson-navigation">
+                            <a href="html_text_formatting.html" class="lesson-nav-btn lesson-nav-prev">
+                                <span class="lesson-nav-label">
+                                    <i class='bx bx-chevron-left'></i>
+                                    Previous
+                                </span>
+                                <span class="lesson-nav-title">HTML Formatting: <br> The Art of Making Text Talk Back</span>
+                            </a>
+
+                            <a href="#" class="lesson-nav-btn lesson-nav-next">
+                                <span class="lesson-nav-label">
+                                    Next
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                                <span class="lesson-nav-title">Coming SOON</span>
+                            </a>
+                        </nav>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="../script_src/index.js"></script>
+</body>
+
+</html>
