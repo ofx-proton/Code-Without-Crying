@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css_src/index.css" />
+
+    <!-- Lesson CSS (if needed) -->
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="../index.html" class="brand">
+                <svg width="64" height="32" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="24" font-family="monospace" font-size="24" font-weight="700" fill="currentColor">
+                        !< </text>
+                </svg>
+            </a>
+
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="../index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="../html_src/lessons.html" class="menu-link">Lessons</a></li>
+                    <li class="menu-item"><a href="../html_src/how_it_works.html" class="menu-link">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="overlay"></span>
+
+            <button type="button" class="menu-block">
+                <a href="../html_src/lessons.html" class="btn btn-neutral">All Lessons</a>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="section" style="padding-block: 5rem 0;">
+        <div class="container">
+            <nav class="lesson-breadcrumb">
+                <a href="../index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="../html_src/lessons.html" class="breadcrumb-link">Lessons</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">HTML Forms</span>
+            </nav>
+        </div>
+    </section>
+
+    <main class="main">
+
+        <!-- Lesson Header -->
+        <section class="section" style="padding-block: 2rem;">
+            <div class="container lesson-header-wrapper">
+                <h1 class="title-large">HTML Forms</h1>
+
+                <p class="lesson-description text-medium font-normal">
+                    Forms are how websites collect your deepest secrets, email addresses, and pizza preferences.
+                    They're the digital paperwork that stands between you and whatever you actually want to do online.
+                    Master them, or spend your life clicking "Forgot Password."
+                </p>
+
+                <div class="lesson-meta">
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-time-five'></i>
+                        <span>15 min read</span>
+                    </span>
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-layer'></i>
+                        <span>Beginner</span>
+                    </span>
+                    <span class="lesson-meta-item">
+                        <i class='bx bx-purchase-tag'></i>
+                        <span>HTML</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-block: 0 4rem;">
+            <div class="container lesson-content-wrapper">
+
+
+                <!-- START WITH A QUOTE -->
+                <div class="lesson-quote">
+                    <div class="lesson-quote-icon">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <blockquote class="lesson-quote-text">
+                        "A form without labels is like a conversation where you forget everyone's name.
+                        Awkward, confusing, and probably going to end with someone crying."
+                    </blockquote>
+                    <p class="lesson-quote-author">— Anonymous UX Designer</p>
+                </div>
+                <br>
+
+                <!-- WARNING BOX AFTER QUOTE -->
+                <div class="lesson-box lesson-box-warning">
+                    <div class="lesson-box-icon">
+                        <i class='bx bx-error'></i>
+                    </div>
+                    <div class="lesson-box-content">
+                        <h3 class="lesson-box-title">Form Anxiety is Real</h3>
+                        <p>
+                            You'll build forms that look perfect, then realize they're completely inaccessible.
+                            You'll add validation that works everywhere except Internet Explorer (RIP).
+                            You'll question why date pickers are so hard. This is normal.
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- HIGHLIGHT BOX -->
+                <div class="lesson-highlight">
+                    <div class="lesson-highlight-icon">
+                        <i class='bx bx-bulb'></i>
+                    </div>
+                    <div class="lesson-highlight-content">
+                        <h3 class="lesson-highlight-title">Quick Navigation</h3>
+                        <p>
+                            This lesson covers: Form structure → Input types → Labels & accessibility → 
+                            Validation → Advanced elements → Complete examples. 
+                            If you get lost, just scroll until you see code.
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- PART 1: FORM ANATOMY -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 1</span>
+                        <h2 class="lesson-part-title title-small">
+                            The Form Ecosystem: More Than Just Boxes
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            A form isn't just inputs—it's a carefully orchestrated system of labels, 
+                            containers, and hidden attributes that make the internet work. 
+                            Think of it as a bureaucracy, but digital.
+                        </p>
+
+                        <!-- CARDS FIRST -->
+                        <div class="lesson-card-grid">
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-box'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;form&gt;</h3>
+                                <p class="lesson-card-text">
+                                    The parent element. Contains everything and tells browsers 
+                                    where to send data. Without it, your inputs are orphans.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-list-check'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;fieldset&gt;</h3>
+                                <p class="lesson-card-text">
+                                    Groups related inputs together. Like putting all your 
+                                    address fields in one box. Also draws a cool border.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-notepad'></i>
+                                </div>
+                                <h3 class="lesson-card-title">&lt;legend&gt;</h3>
+                                <p class="lesson-card-text">
+                                    The title of a fieldset. Describes what the grouped 
+                                    inputs are for. Required if you use fieldset (but nobody checks).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CODE EXAMPLE -->
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;form action="/process" method="POST"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Tell Us About You&lt;/legend&gt;
+        &lt;!-- Inputs go here --&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                        </div>
+
+                        <!-- STEP INSIDE PART -->
+                        <div class="lesson-steps">
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">1</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">Form Attributes: The Secret Sauce</h3>
+                                    <p>Every &lt;form&gt; needs at least two attributes to be useful. Otherwise it's just decoration.</p>
+                                    <br>
+                                    <div class="lesson-code">
+                                        <div class="lesson-code-header">
+                                            <span class="lesson-code-label">HTML</span>
+                                        </div>
+                                        <pre class="lesson-code-block"><code>&lt;form 
+    action="/api/submit" 
+    method="POST"
+    enctype="multipart/form-data"
+    autocomplete="on"
+    novalidate
+&gt;</code></pre>
+                                    </div>
+                                    <br>
+                                    <div class="lesson-highlight">
+                                        <div class="lesson-highlight-icon">
+                                            <i class='bx bx-bulb'></i>
+                                        </div>
+                                        <div class="lesson-highlight-content">
+                                            <h3 class="lesson-highlight-title">method="GET" vs "POST"</h3>
+                                            <p><strong>GET:</strong> Data in URL (example.com?name=John). Use for searches, filters, bookmarkable pages.<br>
+                                            <strong>POST:</strong> Data in request body. Use for logins, signups, credit cards, anything secret.<br>
+                                            Mix them up and watch your passwords appear in browser history.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-divider"></div>
+
+                <!-- PART 2: INPUT GALORE -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 2</span>
+                        <h2 class="lesson-part-title title-small">
+                            Input Types: Choose Your Weapon (Wisely)
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            HTML5 gave us 20+ input types. You'll use 5 regularly, 
+                            forget 10 exist, and wonder why the other 5 are so specific.
+                        </p>
+
+                        <!-- INFO BOX -->
+                        <div class="lesson-box">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-info-circle'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">Type Matters</h3>
+                                <p>
+                                    Different input types trigger different keyboards on mobile, 
+                                    provide built-in validation, and help screen readers. 
+                                    Using <code>type="email"</code> instead of <code>type="text"</code> 
+                                    is the difference between a professional and an amateur.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+
+                        <!-- TWO COLUMN CARD GRID -->
+                        <div class="lesson-card-grid">
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-envelope'></i>
+                                </div>
+                                <h3 class="lesson-card-title">type="email"</h3>
+                                <p class="lesson-card-text">
+                                    Validates @ symbol, shows email keyboard on mobile. 
+                                    Browsers say "This doesn't look right" when you typo.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-calendar'></i>
+                                </div>
+                                <h3 class="lesson-card-title">type="date"</h3>
+                                <p class="lesson-card-text">
+                                    Shows a calendar picker. Every browser implements it differently 
+                                    because consistency is overrated.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-slider'></i>
+                                </div>
+                                <h3 class="lesson-card-title">type="range"</h3>
+                                <p class="lesson-card-text">
+                                    A slider for values. Perfect for "How much do you like pizza?" 
+                                    questions. Goes from 0 to 100, but real answer is always 100.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-color'></i>
+                                </div>
+                                <h3 class="lesson-card-title">type="color"</h3>
+                                <p class="lesson-card-text">
+                                    A color picker! Lets users choose hex colors. 
+                                    Mostly used to make everything neon pink as a joke.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- COMPREHENSIVE CODE EXAMPLE -->
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;!-- The Input Type Zoo --&gt;
+&lt;input type="text" placeholder="Basic text"&gt;
+&lt;input type="email" placeholder="name@example.com" required&gt;
+&lt;input type="password" placeholder="Shh..." minlength="8"&gt;
+&lt;input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"&gt;
+&lt;input type="url" placeholder="https://"&gt;
+&lt;input type="number" min="1" max="10" step="1"&gt;
+&lt;input type="range" min="0" max="100" value="50"&gt;
+&lt;input type="date" min="2024-01-01"&gt;
+&lt;input type="time"&gt;
+&lt;input type="color" value="#ff6b6b"&gt;
+&lt;input type="file" accept=".jpg,.png,.pdf"&gt;
+&lt;input type="hidden" name="user_id" value="123"&gt;</code></pre>
+                        </div>
+
+                        <!-- STEPS WITHIN PART -->
+                        <div class="lesson-steps">
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">1</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">Specialized Inputs You'll Actually Use</h3>
+                                    <p>Some inputs have superpowers you didn't know about.</p>
+                                    <br>
+                                    <div class="lesson-code">
+                                        <div class="lesson-code-header">
+                                            <span class="lesson-code-label">HTML</span>
+                                        </div>
+                                        <pre class="lesson-code-block"><code>&lt;!-- Search with instant clear button --&gt;
+&lt;input type="search"&gt;
+
+&lt;!-- Shows numeric keyboard on mobile --&gt;
+&lt;input type="number" inputmode="numeric"&gt;
+
+&lt;!-- URL validation built-in --&gt;
+&lt;input type="url" placeholder="https://"&gt;
+
+&lt;!-- File upload with restrictions --&gt;
+&lt;input type="file" accept="image/*" multiple&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-step">
+                                <div class="lesson-step-number">2</div>
+                                <div class="lesson-step-content">
+                                    <h3 class="lesson-step-title">The Pattern Attribute: Regex for the Brave</h3>
+                                    <p>Custom validation using regular expressions. Powerful, confusing, and probably wrong on your first try.</p>
+                                    <br>
+                                    <div class="lesson-code">
+                                        <div class="lesson-code-header">
+                                            <span class="lesson-code-label">HTML</span>
+                                        </div>
+                                        <pre class="lesson-code-block"><code>&lt;!-- US Phone Number --&gt;
+&lt;input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+       title="Format: 123-456-7890"&gt;
+
+&lt;!-- Username (letters & numbers only) --&gt;
+&lt;input pattern="[A-Za-z0-9]+" 
+       title="Letters and numbers only"&gt;
+
+&lt;!-- Strong password --&gt;
+&lt;input type="password" 
+       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+       title="8+ chars with uppercase, lowercase, number"&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PART 3: LABELS & ACCESSIBILITY -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 3</span>
+                        <h2 class="lesson-part-title title-small">
+                            Labels: The Difference Between Usable and "What Do I Type Here?"
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            Labels are not optional. They're not decorative. They're the bridge between 
+                            your form and every human trying to use it (including you in three months).
+                        </p>
+
+                        <!-- HIGHLIGHT FIRST -->
+                        <div class="lesson-highlight">
+                            <div class="lesson-highlight-icon">
+                                <i class='bx bx-bulb'></i>
+                            </div>
+                            <div class="lesson-highlight-content">
+                                <h3 class="lesson-highlight-title">Label Rules</h3>
+                                <p>
+                                    1. Every input needs a label<br>
+                                    2. Use <code>for="id"</code> to connect them<br>
+                                    3. Labels should describe what to enter<br>
+                                    4. Placeholders are hints, not replacements<br>
+                                    5. Screen readers read labels aloud
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+
+                        <!-- CODE COMPARISON -->
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML - Good Example</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;div class="form-group"&gt;
+    &lt;label for="user-email"&gt;
+        Email Address &lt;small&gt;(We promise not to spam)&lt;/small&gt;
+    &lt;/label&gt;
+    &lt;input type="email" 
+           id="user-email" 
+           name="email"
+           placeholder="you@example.com"
+           required
+           aria-describedby="email-help"&gt;
+    &lt;small id="email-help"&gt;We'll send a confirmation email&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+
+                        <!-- WARNING BOX -->
+                        <div class="lesson-box lesson-box-warning">
+                            <div class="lesson-box-icon">
+                                <i class='bx bx-error'></i>
+                            </div>
+                            <div class="lesson-box-content">
+                                <h3 class="lesson-box-title">Common Label Mistakes</h3>
+                                <p>
+                                    • Using only placeholders (disappears when typing)<br>
+                                    • "Click here" labels (not descriptive)<br>
+                                    • Missing <code>for</code> attributes (breaks screen readers)<br>
+                                    • Hiding labels with CSS (just... don't)<br>
+                                    • Labels that don't match input purpose
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CARD GRID FOR LABEL TYPES -->
+                        <div class="lesson-card-grid">
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-link'></i>
+                                </div>
+                                <h3 class="lesson-card-title">Explicit Labels</h3>
+                                <p class="lesson-card-text">
+                                    Using <code>for="input-id"</code>. The gold standard. 
+                                    Clicking label focuses input. Screen readers love it.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-label'></i>
+                                </div>
+                                <h3 class="lesson-card-title">Wrapped Labels</h3>
+                                <p class="lesson-card-text">
+                                    Label wraps input. Common for checkboxes/radios.
+                                    Makes entire text clickable. Good UX.
+                                </p>
+                            </div>
+
+                            <div class="lesson-card">
+                                <div class="lesson-card-header">
+                                    <i class='bx bx-accessibility'></i>
+                                </div>
+                                <h3 class="lesson-card-title">ARIA Labels</h3>
+                                <p class="lesson-card-text">
+                                    <code>aria-label</code> or <code>aria-labelledby</code> 
+                                    for complex cases. Advanced but powerful.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-divider"></div>
+
+                <!-- PART 4: COMPLETE EXAMPLES -->
+                <div class="lesson-part">
+                    <div class="lesson-part-header">
+                        <span class="lesson-part-number">Part 4</span>
+                        <h2 class="lesson-part-title title-small">
+                            Real-World Forms: From Simple to "Why So Many Fields?"
+                        </h2>
+                    </div>
+
+                    <div class="lesson-part-content">
+                        <p class="text-base font-normal">
+                            Let's build actual forms you might use. Because tutorials that show 
+                            single inputs are like cooking shows that only teach you to boil water.
+                        </p>
+
+                        <!-- COMPLEX EXAMPLE -->
+                        <div class="lesson-code">
+                            <div class="lesson-code-header">
+                                <span class="lesson-code-label">HTML - Registration Form</span>
+                            </div>
+                            <pre class="lesson-code-block"><code>&lt;form action="/register" method="POST" novalidate&gt;
+    
+    &lt;fieldset&gt;
+        &lt;legend&gt;Account Details&lt;/legend&gt;
+        
+        &lt;div class="form-row"&gt;
+            &lt;label for="username"&gt;Username *&lt;/label&gt;
+            &lt;input type="text" id="username" name="username" 
+                   required minlength="3" maxlength="20"
+                   pattern="[A-Za-z0-9_]+"
+                   title="Letters, numbers, underscores only"&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="form-row"&gt;
+            &lt;label for="email"&gt;Email *&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="form-row"&gt;
+            &lt;label for="password"&gt;Password *&lt;/label&gt;
+            &lt;input type="password" id="password" name="password"
+                   required minlength="8"
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"&gt;
+            &lt;small&gt;8+ characters with uppercase, lowercase, number&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;fieldset&gt;
+        &lt;legend&gt;Profile Information&lt;/legend&gt;
+        
+        &lt;div class="form-row"&gt;
+            &lt;label&gt;Subscribe to:&lt;/label&gt;
+            &lt;div&gt;
+                &lt;input type="checkbox" id="news" name="subscriptions" value="news"&gt;
+                &lt;label for="news"&gt;Newsletter&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;input type="checkbox" id="updates" name="subscriptions" value="updates"&gt;
+                &lt;label for="updates"&gt;Product Updates&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="form-row"&gt;
+            &lt;label for="bio"&gt;Bio&lt;/label&gt;
+            &lt;textarea id="bio" name="bio" rows="4"
+                      placeholder="Tell us about yourself..."&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;div class="form-actions"&gt;
+        &lt;button type="submit"&gt;Create Account&lt;/button&gt;
+        &lt;button type="reset"&gt;Clear Form&lt;/button&gt;
+    &lt;/div&gt;
+    
+&lt;/form&gt;</code></pre>
+                        </div>
+
+                        <!-- FINAL HIGHLIGHT -->
+                        <div class="lesson-highlight">
+                            <div class="lesson-highlight-icon">
+                                <i class='bx bx-bulb'></i>
+                            </div>
+                            <div class="lesson-highlight-content">
+                                <h3 class="lesson-highlight-title">Form Best Practices</h3>
+                                <p>
+                                    • Group related fields with <code>&lt;fieldset&gt;</code><br>
+                                    • Use appropriate input types (email, tel, url)<br>
+                                    • Provide clear error messages<br>
+                                    • Mark required fields with * (and <code>required</code> attribute)<br>
+                                    • Test with keyboard-only navigation<br>
+                                    • Validate on client AND server<br>
+                                    • Keep forms as short as possible (but no shorter)
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FINAL QUOTE -->
+                        <div class="lesson-quote">
+                            <div class="lesson-quote-icon">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <blockquote class="lesson-quote-text">
+                                "The best form is the one users don't notice. 
+                                It asks for what it needs, validates gracefully, 
+                                and submits without drama. 
+                                The worst form is every form you've ever filled out for the government."
+                            </blockquote>
+                            <p class="lesson-quote-author">— A Developer Who Has Filled Too Many Tax Forms</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NAVIGATION -->
+                <section class="section" style="padding-block: 2rem 4rem;">
+                    <div class="container">
+                        <nav class="lesson-navigation">
+                            <a href="../lessons_src/html_tables.html" class="lesson-nav-btn lesson-nav-prev">
+                                <span class="lesson-nav-label">
+                                    <i class='bx bx-chevron-left'></i>
+                                    Previous
+                                </span>
+                                 <span class="lesson-nav-title">HTML Tables: <br> The Bug Studio </span>
+                            </a>
+
+                            <a href="#" class="lesson-nav-btn lesson-nav-next">
+                                <span class="lesson-nav-label">
+                                    Next
+                                    <i class='bx bx-chevron-right'></i>
+                                </span>
+                                <span class="lesson-nav-title">Coming SOON</span>
+                            </a>
+                        </nav>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="../script_src/index.js"></script>
+</body>
+
+</html>
